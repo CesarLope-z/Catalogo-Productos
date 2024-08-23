@@ -1,0 +1,210 @@
+/* font-family: 'Dancing Script', cursive; */
+:root{
+    --piel: #FDCB9A;
+    --rosa: #E8487D;
+    --morado: #CC768D;
+    --gris: #d9dade;
+    --cafe: #815441;
+    --fuenteP: 'Dancing Script', cursive;
+}
+body{
+    background-color: var(--piel) !important;
+    background-image: url(../img/fondo.png) !important;
+}
+.header{
+    background-image: url(../img/headerBG.png);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 140px;
+    position: fixed;
+    top: -50px;
+    z-index: 5;
+}
+.headi{
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 200px;
+}
+.prod{
+    background-color: var(--rosa);
+    padding: 0.3rem 0.5rem;
+    color: white;
+}
+.imagenLogo{
+    background-color: white;
+    border-radius: 40%;
+}
+.imagenesH{
+    display: flex;
+
+}
+.imagen1{
+    position: absolute;
+    bottom: 95%;
+    left: 15%;
+}
+.imagen2{
+    position: absolute;
+    bottom: 90%;
+    right: 10%;
+}
+.imagen3{
+    position: absolute;
+    bottom: 0%;
+    left: 3%;
+}
+.imagen4{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    transform: rotate(-30deg);
+}
+.imagen5{
+    position: absolute;
+    top: 120%;
+    left: 24%;
+}
+.imagen6{
+    position: absolute;
+    top: 110%;
+    right: 20%;
+    transform: rotate(-30deg);
+}
+.imagenesLogo{
+    width: 100%;
+}
+.imagenDiv{
+    width: 30%;
+    max-width: 240px;
+}
+.logo{
+    position: sticky;
+    top: 20px;
+}
+.stuff{
+    margin-top: 35rem;
+    display: grid;
+    place-items: center;
+    
+}
+.productos{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+
+}
+@media (max-width: 600px) {
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0px; 
+  }
+}
+.producto{
+    text-align: center;
+    max-width: 180px;
+    padding: 5%;
+}
+.formulario{
+    background-color: white;
+    border: 4px solid var(--rosa);
+    border-radius: 5rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    width: 40%;
+    margin: 1rem 0;
+}
+input{
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+.unidades{
+    background-color: white;
+    border: 4px solid var(--rosa);
+    border-radius: 5rem;
+    padding: 0.3rem;
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+}
+.imagenProducto{
+
+    background-color: var(--rosa);
+    padding: 0.5rem;
+    border-radius: 50%;
+
+}
+.imagenP{
+    border-radius: 50%;
+    width: 100%;
+}
+.nombre{
+    background-color: white;
+    border: 4px solid var(--rosa);
+    border-radius: 5rem;
+    padding: 0.3rem 0.9rem;
+    position: relative;
+    top: -20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+}
+.textoRosa {
+    background-color: var(--rosa);
+    color: white;
+    width: max-content;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+.grid{
+    display: grid;
+    place-items: center;
+    margin: 9rem 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: center;
+    gap: 10%;
+
+}
+a{
+    text-decoration: none !important;
+    width: 50%;
+}
+@media (max-width: 600px) {
+    .flex {
+      display: block; /* O display: none, dependiendo de lo que quieras lograr */
+    }
+  }
+.imgInt{
+    width: 100%;
+}
+.img1{
+    width: 50%;
+    display: inline-block;
+}
+.img2 {
+    width: 70%;
+    display: inline;
+}
+.img3{
+    width: 70%;
+    display: inline;
+}
+.w-auto{
+    width: auto;
+}
+.lista:hover{
+    font-weight: bold;
+    color: red;
+}
